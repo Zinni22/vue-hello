@@ -15,9 +15,29 @@
     <main>
         <!-- 2.creo il contenitore che conterrà gli elementi di VUE -->
         <div id="app">
-            <div>
-                {{parola}}
+
+            <h1>
+                {{mainTitle}}
+            </h1>
+
+            <div class="post-container">
+                
+                <div class="post">
+
+                    <img :src="post.image" alt="title">
+
+                    <h3>
+                        {{post.title}}
+                    </h3>
+
+                    <p>
+                        {{post.description}}
+                    </p>
+                </div>
+
             </div>
+
+
         </div>
     </main>
     <!-- MAIN -->
